@@ -33,19 +33,19 @@ public class Main {
             }
         }
 
-        double firstValue = numbers[0];
+        double value = numbers[0];
 
         //Perform Addition and Subtraction
         for (int i = 1; i < values.length; i += 2) {
             int numbersIndex = i / 2;
             if (values[i].equals("+")) {
-                firstValue += numbers[numbersIndex + 1];
+                value += numbers[numbersIndex + 1];
             } else if (values[i].equals("-")) {
-                firstValue -= numbers[numbersIndex + 1];
+                value -= numbers[numbersIndex + 1];
             }
         }
 
-        return numbers[0];
+        return value;
     }
 
     private static boolean checkPreviousOperand(String[] operands, int previousIndex) {
